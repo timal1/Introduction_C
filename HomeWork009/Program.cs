@@ -1,8 +1,8 @@
 ﻿//+ Task 64: Задайте значение N. Напишите программу, которая выведет все натуральные числа в промежутке от N до 1. Выполнить с помощью рекурсии.
 
-// Console.Write("Введите число N: ");
-// int numberTask64 = Convert.ToInt32(Console.ReadLine());
-// Console.WriteLine();
+Console.Write("Введите число N: ");
+int numberTask64 = Convert.ToInt32(Console.ReadLine());
+Console.WriteLine();
 
 void ShowNumbers(int number)
 {
@@ -39,13 +39,13 @@ Console.WriteLine($"Сумма элементов от {m} до {n} = {ShowNumbe
 // Task 68: Напишите программу вычисления функции Аккермана с помощью рекурсии. Даны два неотрицательных числа m и n.
 
 
-// Console.Write("Введите первое неотрицательное число N: ");
-// int firstNumberN = Convert.ToInt32(Console.ReadLine());
-// Console.WriteLine();
+Console.Write("Введите первое неотрицательное число N: ");
+int firstNumberN = Convert.ToInt32(Console.ReadLine());
+Console.WriteLine();
 
-// Console.Write("Введите второе неотрицательное число M: ");
-// int secondNumberM = Convert.ToInt32(Console.ReadLine());
-// Console.WriteLine();
+Console.Write("Введите второе неотрицательное число M: ");
+int secondNumberM = Convert.ToInt32(Console.ReadLine());
+Console.WriteLine();
 
 int AccermanFunction(int n, int m)
 {
@@ -58,5 +58,4 @@ int AccermanFunction(int n, int m)
         return AccermanFunction(n - 1, AccermanFunction(n, m - 1));
 }
 
-
-// Console.WriteLine(AccermanFunction(firstNumberN, secondNumberM));
+Console.WriteLine(AccermanFunction(firstNumberN, secondNumberM));
